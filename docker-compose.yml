@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  gateway:
+    image: ${DOCKER_REGISTRY-}gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
+
+  pedido:
+    image: ${DOCKER_REGISTRY-}pedido
+    build:
+      context: .
+      dockerfile: Pedido/Dockerfile
+
+
+  catalogo:
+    image: ${DOCKER_REGISTRY-}catalogo
+    build:
+      context: .
+      dockerfile: Catalogo/Dockerfile
+
