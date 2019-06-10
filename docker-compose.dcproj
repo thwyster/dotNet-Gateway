@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>ffaa79dd-5d46-4f29-8e54-b4956713994d</ProjectGuid>
+    <ProjectGuid>a50fa77b-001e-40fb-8967-78c8a3ee8011</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
     <DockerServiceName>gateway</DockerServiceName>
