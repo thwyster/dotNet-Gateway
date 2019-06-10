@@ -20,3 +20,17 @@ services:
       context: .
       dockerfile: Pedido/Dockerfile
 
+
+  rpcclient:
+    image: ${DOCKER_REGISTRY-}rpcclient
+    build:
+      context: .
+      dockerfile: RPCClient/Dockerfile
+    container_name: RPCClient
+
+  rpcserver:
+    image: ${DOCKER_REGISTRY-}rpcserver
+    build:
+      context: .
+      dockerfile: ../RPCServer/Dockerfile
+    container_name: RPCServer
