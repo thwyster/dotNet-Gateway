@@ -17,11 +17,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "pedido",
+          "Host": "pedido",//Endpoint do Microserviço que o Gateway Chama
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/pedido/{everything}",
+      "UpstreamPathTemplate": "/pedido/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     },
     {

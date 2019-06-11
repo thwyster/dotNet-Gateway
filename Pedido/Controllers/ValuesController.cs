@@ -14,6 +14,7 @@ namespace Pedido.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            //return RabbitMQ.MandaRPC();
             return new string[] { "Item 1", "Item 2" };
         }
 
@@ -28,6 +29,8 @@ namespace Pedido.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+
+
         }
 
         // PUT api/values/5
