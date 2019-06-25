@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{4F33EB4E-7305-4400-B6B5-E39C4733CD07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedido", "Pedido\Pedido.csproj", "{D962E1B3-A1ED-4DFE-89FB-543F3C329B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PedidoTESTE", "Pedido\PedidoTESTE.csproj", "{D962E1B3-A1ED-4DFE-89FB-543F3C329B25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalogo", "Catalogo\Catalogo.csproj", "{F44CDC76-9A6D-4276-9D55-5507550ECD91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoTESTE", "Catalogo\CatalogoTESTE.csproj", "{F44CDC76-9A6D-4276-9D55-5507550ECD91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 . Docker", "0 . Docker", "{634A822A-C536-491B-8302-FBCDE64B1B93}"
 EndProject

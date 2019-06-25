@@ -19,7 +19,8 @@ namespace Gateway
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration(ic => ic.AddJsonFile("configuration.json"))
+                .ConfigureAppConfiguration(ic => ic.AddJsonFile("Configurations/configurationPedido.json"))
+                .ConfigureAppConfiguration(ic => ic.AddJsonFile("Configurations/configurationCatalogo.json"))
                 .UseStartup<Startup>();
     }
 }

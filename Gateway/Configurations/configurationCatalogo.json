@@ -5,30 +5,6 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "pedido",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/pedido/",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
-    },
-    {
-      "DownstreamPathTemplate": "/{everything}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "pedido",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/pedido/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
           "Host": "catalogo",
           "Port": 80
         }
