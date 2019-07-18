@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "pedidoTESTE",
+          "Host": "pedido",
           "Port": 80
         }
       ],
@@ -17,7 +17,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "pedidoTESTE", //Endpoint do Microserviço que o Gateway Chama
+          "Host": "pedido", //Endpoint do Microserviço que o Gateway Chama
           "Port": 80
         }
       ],

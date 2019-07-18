@@ -14,7 +14,7 @@ namespace Catalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Produto 1", "Produto 2", "Produto 3", "Produto 4" };
+            return new string[] { "Produto 1", "Produto 2", "Produto 3", "Produto ADRIANO" };
         }
 
         // GET api/values/5
