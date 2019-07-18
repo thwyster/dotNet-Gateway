@@ -5,11 +5,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalogo",
+          "Host": "venda", //Endpoint do Microserviço que o Gateway Chama
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/catalogo/{everything}",
+      "UpstreamPathTemplate": "/venda/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ],
       "RateLimitOptions": {
         "ClientWhitelist": [],

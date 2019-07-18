@@ -1,18 +1,6 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "pedido",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/pedido/",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
-    },
-    {
       "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -22,7 +10,14 @@
         }
       ],
       "UpstreamPathTemplate": "/pedido/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     }
   ],
   "GlobalConfiguration": {}

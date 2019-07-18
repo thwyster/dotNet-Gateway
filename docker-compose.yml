@@ -20,3 +20,16 @@ services:
       context: .
       dockerfile: Pedido/Dockerfile
 
+
+  venda:
+    image: ${DOCKER_REGISTRY-}venda
+    build:
+      context: .
+      dockerfile: Venda/Dockerfile
+
+
+  identityserver:
+    image: ${DOCKER_REGISTRY-}identityserver
+    build:
+      context: .
+      dockerfile: IdentityServer/Dockerfile

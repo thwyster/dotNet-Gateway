@@ -21,6 +21,7 @@ namespace Gateway
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration(ic => ic.AddJsonFile("Configurations/configurationPedido.json"))
                 .ConfigureAppConfiguration(ic => ic.AddJsonFile("Configurations/configurationCatalogo.json"))
+                .ConfigureAppConfiguration(ic => ic.AddJsonFile("Configurations/configurationVenda.json"))
                 .UseStartup<Startup>();
     }
 }
