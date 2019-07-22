@@ -1,27 +1,15 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "pedido",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/pedido/",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
-    },
-    {
       "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "pedido", //Endpoint do Microserviço que o Gateway Chama
-          "Port": 80
+          "Host": "localhost", //Endpoint do Microserviço que o Gateway Chama
+          "Port": 5004
         }
       ],
-      "UpstreamPathTemplate": "/pedido/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
+      "UpstreamPathTemplate": "/teste/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     }
   ],

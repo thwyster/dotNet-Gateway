@@ -6,53 +6,72 @@ using System.Threading.Tasks;
 
 namespace Console_Client
 {
-    public class Program
+    class Program
     {
-        private static async Task Main()
+        static void Main(string[] args)
         {
-            // discover endpoints from metadata
-            var client = new HttpClient();
+            Console.WriteLine("Test client for Ocelot, IdentityServer4, and an internal ASP.NET Core 2.1 API");
+            Console.WriteLine(Environment.NewLine);
 
-            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:5000");
-            if (disco.IsError)
+            MainAsync().GetAwaiter().GetResult();
+        }
+
+        private static async Task MainAsync()
+        {
+            try
             {
-                Console.WriteLine(disco.Error);
-                return;
+                Console.WriteLine("Calling IdentityServer4 discovery endpoint...");
+                Console.WriteLine(Environment.NewLine);
+
+                var discoveryUrl = "http://localhost:5555/";
+                var clientId = "thwyster";
+                var clientSecret = "123456";
+                var discoveryClient = new DiscoveryClient(discoveryUrl);
+                var discoveryResponse = await discoveryClient.GetAsync();
+                if (discoveryResponse.IsError)
+                {
+                    throw new Exception("Failed to get discovery response! - " + discoveryResponse.Error);
+                }
+
+                Console.WriteLine("Calling IdentityServer4 authorize endpoint to get request token...");
+                Console.WriteLine(Environment.NewLine);
+
+                var scope = "vendaApi";
+                var tokenClient = new TokenClient(discoveryResponse.TokenEndpoint, clientId, clientSecret);
+                var tokenResponse = await tokenClient.RequestClientCredentialsAsync(scope);
+                if (tokenResponse.IsError)
+                {
+                    throw new Exception("Authentication failed!");
+                }
+
+                Console.WriteLine("Calling Ocelot endpoint with bearer token to get widgets...");
+                Console.WriteLine(Environment.NewLine);
+
+                var uri = "http://localhost:5000/venda/api/values";
+                var gatewayClient = new HttpClient();
+                gatewayClient.SetBearerToken(tokenResponse.AccessToken);
+                var response = await gatewayClient.GetAsync(uri);
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine("Received HTTP 200 from API. Writing widgets to console...");
+                    Console.WriteLine(Environment.NewLine);
+
+                    var content = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(content);
+                }
+                else
+                {
+                    Console.WriteLine("Response was unsuccessful with status code: " + response.StatusCode);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(Environment.NewLine);
             }
 
-            // request token
-            var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
-            {
-                Address = disco.TokenEndpoint,
-                ClientId = "client", //Seria como o login 
-                ClientSecret = "secret", //Seria como a senha
-
-                Scope = "api1" // Client diz qual api quer acessar
-            });
-
-            if (tokenResponse.IsError)
-            {
-                Console.WriteLine(tokenResponse.Error);
-                return;
-            }
-
-            Console.WriteLine(tokenResponse.Json);
-            Console.WriteLine("\n\n");
-
-            // call api
-            var apiClient = new HttpClient();
-            apiClient.SetBearerToken(tokenResponse.AccessToken);
-
-            var response = await apiClient.GetAsync("http://localhost:5001/identity");
-            if (!response.IsSuccessStatusCode)
-            {
-                Console.WriteLine(response.StatusCode);
-            }
-            else
-            {
-                var content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(JArray.Parse(content));
-            }
+            Console.WriteLine("Press ENTER to quit.");
+            Console.ReadLine();
         }
     }
 }

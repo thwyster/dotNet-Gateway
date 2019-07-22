@@ -1,15 +1,15 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/",
+      "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalogo",
-          "Port": 80
+          "Host": "localhost", //Endpoint do Microserviço que o Gateway Chama
+          "Port": 5001
         }
       ],
-      "UpstreamPathTemplate": "/catalogo/",
+      "UpstreamPathTemplate": "/catalogo/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     },
     {
@@ -17,11 +17,23 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalogo",
-          "Port": 80
+          "Host": "localhost", //Endpoint do Microserviço que o Gateway Chama
+          "Port": 5002
         }
       ],
-      "UpstreamPathTemplate": "/catalogo/{everything}",
+      "UpstreamPathTemplate": "/pedido/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost", //Endpoint do Microserviço que o Gateway Chama
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/venda/{everything}", //UrlExternaParaOClient - EndPoint que o FrontChama
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     }
   ],

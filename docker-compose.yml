@@ -13,10 +13,8 @@ services:
       context: .
       dockerfile: Catalogo/Dockerfile
 
-
   pedido:
     image: ${DOCKER_REGISTRY-}pedido
     build:
       context: .
       dockerfile: Pedido/Dockerfile
-

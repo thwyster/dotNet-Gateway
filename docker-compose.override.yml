@@ -7,9 +7,6 @@ services:
     ports:
       - "7000:80"
     container_name: gateway
-    volumes:
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
   catalogo:
     environment:
@@ -17,9 +14,6 @@ services:
     ports:
       - "7001:80"
     container_name: catalogo
-    volumes:
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
   pedido:
     environment:
@@ -27,6 +21,3 @@ services:
     ports:
       - "7002:80"
     container_name: pedido
-    volumes:
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

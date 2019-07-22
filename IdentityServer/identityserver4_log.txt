@@ -1,0 +1,96 @@
+2019-07-18 16:35:07.118 +00:00 [WRN] No XML encryptor configured. Key "7b8e9222-059f-4e15-865c-53d7ac5f0dda" may be persisted to storage in unencrypted form.
+2019-07-18 16:35:07.300 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-18 16:35:07.341 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-18 16:35:07.377 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-18 16:35:07.378 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-18 16:35:07.378 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-18 16:35:07.386 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-18 16:35:07.386 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-18 16:35:07.387 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-18 16:42:12.937 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-18 16:42:13.009 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-18 16:42:13.049 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-18 16:42:13.050 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-18 16:42:13.052 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-18 16:42:13.052 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-18 16:42:13.053 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-18 16:42:13.053 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-18 16:57:59.217 +00:00 [WRN] No XML encryptor configured. Key "baa76715-5d1a-44e9-adf1-c3926c37a687" may be persisted to storage in unencrypted form.
+2019-07-18 16:57:59.486 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-18 16:57:59.523 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-18 16:57:59.567 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-18 16:57:59.571 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-18 16:57:59.573 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-18 16:57:59.576 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-18 16:57:59.577 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-18 16:57:59.578 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-18 16:58:48.455 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-18 16:58:48.574 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-18 16:58:48.617 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-18 16:58:48.618 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-18 16:58:48.625 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-18 16:58:48.626 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-18 16:58:48.626 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-18 16:58:48.627 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-18 20:06:17.344 +00:00 [WRN] No XML encryptor configured. Key "c8d5bda5-d9b0-4652-a7c8-24a1f5c9404e" may be persisted to storage in unencrypted form.
+2019-07-18 20:06:17.646 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-18 20:06:17.674 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-18 20:06:17.690 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-18 20:06:17.694 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-18 20:06:17.697 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-18 20:06:17.702 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-18 20:06:17.717 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-18 20:06:17.718 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 12:40:33.720 +00:00 [WRN] No XML encryptor configured. Key "8bfff4e2-1453-460c-954e-55fab1d2a19d" may be persisted to storage in unencrypted form.
+2019-07-19 12:40:33.901 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 12:40:33.920 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 12:40:33.944 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 12:40:33.944 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 12:40:33.945 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 12:40:33.945 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 12:40:33.945 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 12:40:33.945 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 12:46:36.204 +00:00 [WRN] No XML encryptor configured. Key "328505c3-b2a5-47d7-909d-930798eba1ac" may be persisted to storage in unencrypted form.
+2019-07-19 12:46:36.388 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 12:46:36.415 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 12:46:36.429 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 12:46:36.433 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 12:46:36.434 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 12:46:36.435 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 12:46:36.436 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 12:46:36.437 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 12:54:53.310 +00:00 [WRN] No XML encryptor configured. Key "ea64596a-6701-471a-83fe-b041b8cf933c" may be persisted to storage in unencrypted form.
+2019-07-19 12:54:53.556 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 12:54:53.580 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 12:54:53.606 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 12:54:53.611 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 12:54:53.612 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 12:54:53.612 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 12:54:53.612 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 12:54:53.612 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 13:16:59.421 +00:00 [WRN] No XML encryptor configured. Key "bcd9a41a-3a00-4d7d-a33c-9e4f0f8224f2" may be persisted to storage in unencrypted form.
+2019-07-19 13:16:59.659 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 13:16:59.677 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 13:16:59.728 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 13:16:59.730 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 13:16:59.731 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 13:16:59.731 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 13:16:59.733 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 13:16:59.735 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 13:21:08.097 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 13:21:08.201 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 13:21:08.244 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 13:21:08.245 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 13:21:08.247 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 13:21:08.248 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 13:21:08.249 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 13:21:08.250 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-07-19 13:31:32.121 +00:00 [WRN] No XML encryptor configured. Key "e770a9ef-6366-4b72-ba9d-8fb2a5c2474b" may be persisted to storage in unencrypted form.
+2019-07-19 13:31:32.416 +00:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-07-19 13:31:32.477 +00:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-07-19 13:31:32.501 +00:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-07-19 13:31:32.502 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-07-19 13:31:32.503 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-07-19 13:31:32.506 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-07-19 13:31:32.507 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-07-19 13:31:32.507 +00:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
