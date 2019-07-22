@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +25,29 @@ namespace Gateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configurando JWT no Ocelot
+            //var authenticationProviderKey = "TestKey";
+
+            //services.AddAuthentication()
+            //    .AddJwtBearer(authenticationProviderKey, w =>
+            //    {
+            //        w.Authority = "";
+            //        w.Audience = "";
+            //    });
+
+            //Fase2
+            //var authenticationProviderKey = "TestKey";
+
+            //var options = new System.Action<IdentityServerAuthenticationOptions> 
+            //{
+            //    Authority = "http://localhost:6000",
+            //    ApiName = "Venda",
+            //    SupportedTokens = SupportedTokens.Both,
+            //    ApiSecret = "secret"
+            //};
+
+            //services.AddAuthentication().AddIdentityServerAuthentication(authenticationProviderKey, options);
+
             services.AddOcelot(_configuration);
         }
 
